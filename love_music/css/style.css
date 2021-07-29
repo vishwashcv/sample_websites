@@ -1,0 +1,276 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+
+}
+body{
+	overflow-x: hidden;
+	background-repeat: no-repeat;
+	background-image: url('https://wallpapercave.com/wp/wp2576521.png');
+	background-color: black;
+	background-size: all;
+	letter-spacing: 1px;
+	line-height: 1.8;
+	margin: 0;
+	
+}
+
+nav{
+	
+	background-color: #4169E1;
+	font-family: Sans-serif;
+	color: white;
+	font-size: 130%;
+	text-indent: 20px;
+	padding: 10px;	
+	position: fixed;	
+	width: 100%;
+	display: block;
+	transition: 0.3s;
+
+}
+
+.main-nav{
+	float: right;
+	margin-right: 15px;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: transparent;
+}
+
+.main-nav li{
+	display: inline-block;
+	list-style: none;
+	margin-left: 15px;
+}
+
+.main-nav li a{
+	color: white;
+	text-decoration: none;
+	font-family: Sans-serif;
+	text-transform: uppercase;
+	font-size: 60%;
+	font-weight: lighter;
+
+}
+.main-nav li a:hover{
+	border-bottom: 1px solid white;
+	box-sizing: border-box; 
+	opacity: 0.5;
+	transition: 0.5s;
+}
+
+.heading-1{
+	text-align: center;
+	font-family: Sans-serif;
+	color: white;
+
+}
+
+.text-1{
+	margin-left: 20%;
+	margin-right: 20%;
+	text-align: center;
+	font-family: Sans-serif;
+	font-size: 90%;
+	color: white;
+	padding: 1%;
+}
+	
+.img{
+	width: 100%;
+	height: auto;
+	max-width: 800px;
+	padding: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	margin-top: 4%;
+	transition: 0.2s;
+}
+
+.total-img{
+	content: "";
+  clear: both;
+  display: table;
+  max-width: 400px;
+  width: auto;
+
+}
+.total-img1{
+	float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+
+.input-total{
+	background-color: grey;
+	padding: 3%; 
+}
+
+.input-title{
+	font-family: Sans-serif;
+	text-align:center;
+	text-transform: uppercase;
+	font-weight: lighter;
+}
+
+.input-border{
+	width: 100%;
+  	max-width: 300px;
+  	padding: 12px 20px;
+  	margin: 10px;
+  	margin-left: auto;
+	margin-right: auto;
+  	display: block;
+  	border: 1px solid #ccc;
+  	border-radius: 4px;
+  	box-sizing: border-box;
+}
+.button{
+	width: 100%;
+	max-width: 120px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.2s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 80%;
+  color: #818181;
+  display: block;
+  transition: 0.2s;
+}
+
+.sidenav a:hover {
+  color: white;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 120%;
+  margin-left: 50px;
+}
+
+
+
+.side-butt{
+	color: white;
+	cursor: pointer;
+	display: none;
+}
+
+
+.gallery-area{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.gallery-img{
+	width: auto;
+	height: auto;
+	max-height: 300px;
+	max-width: 300px;
+	margin: 2%;
+	display: inline-block;
+	overflow: hidden;
+	object-fit: contain;
+}
+
+
+
+
+@media only screen and (max-width: 1024px){
+	body{
+		font-size: 80%;
+
+	}
+	header{
+		font-size: 160%;
+	}
+	.nav{
+		font-weight: lighter;
+		font-size: 60%;
+		transition: 0.1s;
+	}
+	.img{
+		margin-top: 0%;
+	}
+
+	.main-nav{display: none;}
+
+	.side-butt{
+	
+	display: inline-block;
+	float: left;
+	color: white;
+
+	}
+	
+	.main-nav{float: right;
+		margin-top: 55px;
+		background-color: rgba(800,800,800,0.9);
+		padding: 7px;
+		margin-bottom: 10px;
+
+	}
+
+	.main-nav li{
+		display: block;
+		margin-right: 20px;
+	}
+	.main-nav li a{
+		color: black;
+
+	}
+	.main-nav li a:hover{
+	border-bottom:1px solid black;
+	}
+	
+
+
+}
+
+@media all and (min-width: 1024px){
+
+	.nav{
+		font-weight: lighter;
+		transition: 0.1s;
+	}
+		.sidenav{
+		display: none;
+	}
+
+}
