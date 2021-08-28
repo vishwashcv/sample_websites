@@ -37,6 +37,7 @@ button{
 }
 .Search{
         justify-content: flex-start;
+        
         min-width: 304px;
         width: calc(100% - 140px);
         margin: 0 auto 0 12px;
