@@ -3,7 +3,9 @@
     text-decoration: none;
     overflow-x: hidden;
 }
-
+body{
+    overflow-x: hidden;
+}
 #nav-1{
     max-height: 56px;
 }
