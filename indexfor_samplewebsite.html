@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vishwash portfolio</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✌🏻</text></svg>">
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
@@ -115,10 +116,12 @@
       border: 1px solid white;
       padding: 10px;
       margin: 10px;
-      color: white;
+      background-color: white;
+      color: #a4de02;
+      
     }
     .sourcecode:hover {
-      background-color: rgb(14, 233, 14);
+      background-color: rgb(1, 110, 1);
       transition: 1s;
       color: white;
     }
@@ -130,6 +133,21 @@
       -webkit-animation-duration: 3s;
       -moz-animation-name: slidein-left;
       -webkit-animation-name: slidein-left;
+    }
+    
+    .fade-in{
+      opacity: 0;
+      transition: opacity 250ms ease-in;
+
+    }
+
+    .fade-in.appear {
+      opacity: 1;
+      transition: 2s;
+    }
+    img:hover {
+      transform: scale(1.1);
+      z-index: 2;
     }
 
     @-moz-keyframes slidein-left {
@@ -197,34 +215,34 @@
   </style>
   <body>
     <header>
-      <h1 style="color: black">Hi, I'm vishwash</h1>
-      <h2 style="color: black">I'm Frontend Developer</h2>
+      <h1 style="color: black;">Hi, I'm vishwash</h1>
+      <h2 style="color: black;">I'm Frontend Developer</h2>
     </header>
     <div class="container">
       <h1 style="color: white;">ABOUT ME</h1>
-      <p style="color: white; padding-bottom: 20px;">I'm Doing Engineering Specialized in Computer Science and I like to build the web pages. I Started My Journey in 2020 to Learn the Code. I Begin with JavaScript and then I Started Web development.</p>
+      <p style="color: white; padding-bottom: 20px;">I'm Software Developer and I like to build the web pages. I Started My Journey in 2020 to Learn the Code. I Begin with JavaScript and then I Started Web development.</p>
       <hr>
-      <h1 style="color: white; margin: 60px"><center>PROJECTS</center></h1>
+      <h1 style="color: white; margin: 60px" class="fade-in"><center>PROJECTS</center></h1>
       <center>
         <hr>
-        <div class="sites">
+        <div class="sites fade-in">
           <div class="content">
             <a
               href="https://vishwashcv.github.io/sample_websites/Nothing/index.html"
             >
               <div>
-                <h1 class="h1">JUST SITE</h1>
-                <p>Its just a website for design purpose.</p>
+                <h1 class="h1 fade-in">JUST SITE</h1>
+                <p class="fade-in">Its just a website for design purpose.</p>
               </div>
             </a>
             <a
-              class="sourcecode"
+              class="sourcecode fade-in"
               href="https://vishwashcv.github.io/sample_websites/Nothing/index.html"
             >
               VISIT</a
             >
             <a
-              class="sourcecode"
+              class="sourcecode fade-in"
               href="https://github.com/vishwashcv/sample_websites"
             >
               SOURCE CODE
@@ -237,22 +255,22 @@
           /></a>
         </div>
         <hr>
-        <div class="sites">
+        <div class="sites fade-in ">
           <div class="content">
             <a href="https://vishwashcv.github.io/sample_websites/index.html">
               <div>
-                <h1 class="h1">TIME TABLE</h1>
-                <p>This Time Table is build for html layout practice.</p>
+                <h1 class="h1 fade-in">TIME TABLE</h1>
+                <p class="fade-in">This Time Table is build for html layout practice.</p>
               </div>
             </a>
             <a
-              class="sourcecode"
+              class="sourcecode fade-in"
               href="https://vishwashcv.github.io/sample_websites/index.html"
             >
               VISIT</a
             >
             <a
-              class="sourcecode"
+              class="sourcecode fade-in"
               href="https://github.com/vishwashcv/sample_websites"
             >
               SOURCE CODE
@@ -263,24 +281,24 @@
           /></a>
         </div>
         <hr>
-        <div class="sites">
+        <div class="sites fade-in">
           <div class="content">
             <a
               href="https://vishwashcv.github.io/sample_websites/flipkart/flipkart site.html"
             >
               <div>
-                <h1 class="h1">FLIPKART CLONE</h1>
-                <p>This website is build for flipkart clone UI</p>
+                <h1 class="h1 fade-in">FLIPKART CLONE</h1>
+                <p class="fade-in">This website is build for flipkart clone UI</p>
               </div>
             </a>
             <a
-              class="sourcecode"
+              class="sourcecode fade-in"
               href="https://vishwashcv.github.io/sample_websites/flipkart/flipkart site.html"
             >
               VISIT</a
             >
             <a
-              class="sourcecode"
+              class="sourcecode fade-in"
               href="https://github.com/vishwashcv/sample_websites"
             >
               SOURCE CODE
@@ -293,22 +311,22 @@
           /></a>
         </div>
         <hr>
-        <div class="sites">
+        <div class="sites fade-in">
           <div class="content">
             <a
               href="https://vishwashcv.github.io/sample_websites/web2/index.html"
             >
-              <h1 class="h1">FOOD ORDER</h1>
-              <p>This website is build for to order foods (UI)</p>
+              <h1 class="h1 fade-in">FOOD ORDER</h1>
+              <p class="fade-in">This website is build for to order foods (UI)</p>
             </a>
             <a
-              class="sourcecode"
+              class="sourcecode fade-in"
               href="https://vishwashcv.github.io/sample_websites/web2/index.html"
             >
               VISIT</a
             >
             <a
-              class="sourcecode"
+              class="sourcecode fade-in"
               href="https://github.com/vishwashcv/sample_websites"
             >
               SOURCE CODE
@@ -321,27 +339,27 @@
           /></a>
         </div>
         <hr>
-        <div class="sites">
+        <div class="sites fade-in">
           <div class="content">
             <a
               href="https://vishwashcv.github.io/sample_websites/university%20site/index.html"
             >
               <div>
-                <h1 class="h1">UNIVERSITY</h1>
-                <p>
+                <h1 class="h1 fade-in">UNIVERSITY</h1>
+                <p class="fade-in">
                   This University Project build for college students, and
                   college management.
                 </p>
               </div>
             </a>
             <a
-              class="sourcecode"
+              class="sourcecode fade-in"
               href="https://vishwashcv.github.io/sample_websites/university%20site/index.html"
             >
               VISIT</a
             >
             <a
-              class="sourcecode"
+              class="sourcecode fade-in"
               href="https://github.com/vishwashcv/sample_websites"
             >
               SOURCE CODE
@@ -356,4 +374,26 @@
       </center>
     </div>
   </body>
+  <script>
+    const faders =document.querySelectorAll('.fade-in');
+    const appearOptions = {
+    };
+    const appearOnscroll = new IntersectionObserver
+  (function (
+    entries, appearOnscroll
+    ){
+      entries.forEach(entry => {
+        if(!entry.isIntersecting) {
+          return;
+        } else {
+          entry.target.classList.add("appear");
+          appearOnscroll.unobserve(entry.target);
+        }
+      })
+    },
+    appearOptions);
+    faders.forEach(fader => {
+      appearOnscroll.observe(fader);
+    })
+  </script>
 </html>
